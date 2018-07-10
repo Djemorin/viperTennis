@@ -37,6 +37,7 @@
 			</div>
 
 			<div class="result">
+				<h2>Mises à jouer :</h2>
 				<p>V(J1)V(J3) : </p><div id="mise1"></div>
 				<p>V(J1)D(J3) : </p><div id="mise2"></div>
 				<p>D(J1)V(J3) : </p><div id="mise3"></div>
@@ -115,9 +116,9 @@
 				console.log(gain);
 				console.log(benefice);
 
-				document.getElementById("mise1").innerHTML = mise1;
-				document.getElementById("mise2").innerHTML = mise2;
-				document.getElementById("mise3").innerHTML = mise3;
+				document.getElementById("mise1").innerHTML = mise1 + " Euros";
+				document.getElementById("mise2").innerHTML = mise2 + " Euros";
+				document.getElementById("mise3").innerHTML = mise3 + " Euros";
 
 				document.getElementById("gains").innerHTML = gain + " Euros";
 				document.getElementById("benefice").innerHTML = benefice + " Euros";
