@@ -1,0 +1,169 @@
+body{
+	margin: 0;
+	padding: 0;
+
+	background-color: black;
+	background: url(bg.jpg);
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	color: white;
+
+	width: 100%;
+	height: 100%;
+
+	font-family: 'Open Sans', sans-serif;
+}
+
+.content{
+	position: absolute;
+	display: table;
+	
+	width: 70%;
+	height: 70%;
+
+	top: 15%;
+	left:15%;
+
+	border-top-left-radius: 10%;
+	border-bottom-right-radius: 10%;
+
+	margin: 0 auto;
+
+	/*background-color: rgba(0,0,0, 0.3);*/
+
+	text-align: center;
+}
+
+.mise{
+	display: block;
+	width: 100%;
+	height: 150px;
+
+	text-align: center;
+
+	border: 2px solid white;
+
+	margin: 1% auto;
+	padding: 2% auto;
+	background-color: rgba(0,0,0, 0.3);
+	/*background-color: blue;*/
+	font-size: 25px;
+
+	line-height: 70px;
+}
+
+#somme{
+	height: 50px;
+	font-size: 40px;
+}
+
+h1{
+	margin: 0 0;
+}
+
+.match1{
+	display: block;
+	float: left;
+
+	width: 48%;
+	height: 200px;
+	line-height: 20px;
+	margin: 1% 0.7%;
+	padding: 5% auto;
+
+	/*background-color: yellow;*/
+background-color: rgba(0,0,0, 0.3);
+	border: 2px solid white;
+}
+
+.match2{
+	display: block;
+	float: left;
+
+	width: 48%;
+	height: 200px;
+	line-height: 20px;
+	margin: 1% 0.7%;
+	padding: 5% auto;
+
+	/*background-color: red;*/
+background-color: rgba(0,0,0, 0.3);
+	border: 2px solid white
+}
+
+h2{
+	margin: 1% auto;
+	padding: auto;
+}
+
+.valid{
+	display: block;
+	float: left;
+
+	width: 100%;
+	height: 100px;
+
+	line-height: 110px;
+/*background-color: rgba(0,0,0, 0.3);*/
+	margin: 1% auto;
+
+	/*background-color: green;*/
+
+
+
+
+}
+
+.result{
+	display: block;
+	float: left;
+
+	width: 48%;
+	height: auto;
+
+	margin: 1% 0.7%;
+	padding: 3% auto;
+
+	border: 2px solid white;
+background-color: rgba(0,0,0, 0.3);
+	/*background-color: pink;*/
+
+}
+
+.gains{
+	display: block;
+	float: left;
+
+	width: 48%;
+	height: auto;
+
+	margin: 1% 0.7%;
+	padding: 3% auto;
+
+	border: 2px solid white;
+background-color: rgba(0,0,0, 0.3);
+	/*background-color: white;*/
+
+}
+
+input{
+	margin: 0 auto;
+	text-align: center;
+	width: 90%;
+	height: 25px;
+}
+
+#grosbouton{
+	height: 90px;
+	font-size: 30px;
+
+	cursor: pointer;
+}
+
+#mise1, #mise2, #mise3, #gains, #benefice{
+	font-weight: bolder;
+	font-size: 20px;
+}
