@@ -18,17 +18,15 @@ body{
 }
 
 .content{
-	position: absolute;
 	display: table;
 	
+	/*position: absolute;*/
+
 	width: 70%;
 	height: 70%;
 
 	top: 15%;
-	left:15%;
-
-	border-top-left-radius: 10%;
-	border-bottom-right-radius: 10%;
+	left: 15%;
 
 	margin: 0 auto;
 
@@ -46,7 +44,7 @@ body{
 
 	border: 2px solid white;
 
-	margin: 1% auto;
+	margin: 2% auto;
 	padding: 2% auto;
 	background-color: rgba(0,0,0, 0.3);
 	/*background-color: blue;*/
@@ -68,30 +66,39 @@ h1{
 	display: block;
 	float: left;
 
-	width: 48%;
-	height: 200px;
+	width: 50%;
+	height: auto;
 	line-height: 20px;
-	margin: 1% 0.7%;
+	margin: 2% auto;
 	padding: 5% auto;
 
 	/*background-color: yellow;*/
-background-color: rgba(0,0,0, 0.3);
-	border: 2px solid white;
+/*background-color: rgba(0,0,0, 0.3);*/
+	/*border: 2px solid white;*/
 }
 
 .match2{
 	display: block;
 	float: left;
 
-	width: 48%;
-	height: 200px;
+	width: 50%;
+	height: auto;
 	line-height: 20px;
-	margin: 1% 0.7%;
+	margin: 2% auto;
 	padding: 5% auto;
 
 	/*background-color: red;*/
-background-color: rgba(0,0,0, 0.3);
-	border: 2px solid white
+/*background-color: rgba(0,0,0, 0.3);*/
+	/*border: 2px solid white*/
+}
+
+.contenumatch{
+	width: 95%;
+	height: 210px;
+	line-height: 20px;
+	margin: 0 auto;
+	background-color: rgba(0,0,0, 0.3);
+	border: 2px solid white;
 }
 
 h2{
@@ -124,7 +131,7 @@ h2{
 	width: 48%;
 	height: auto;
 
-	margin: 1% 0.7%;
+	margin: 2% 0.7%;
 	padding: 3% auto;
 
 	border: 2px solid white;
@@ -140,7 +147,7 @@ background-color: rgba(0,0,0, 0.3);
 	width: 48%;
 	height: auto;
 
-	margin: 1% 0.7%;
+	margin: 2% 0.7%;
 	padding: 3% auto;
 
 	border: 2px solid white;
