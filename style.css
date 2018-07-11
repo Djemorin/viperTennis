@@ -5,7 +5,7 @@ body{
 	background-color: black;
 	background: url(bg.jpg);
 	background-position: center;
-	background-attachment: fixed;
+	background-attachment: fixed ;important!
 	background-repeat: no-repeat;
 	background-size: cover;
 
@@ -20,7 +20,7 @@ body{
 .content{
 	display: table;
 	
-	/*position: absolute;*/
+	position: absolute;
 
 	width: 70%;
 	height: 70%;
@@ -60,6 +60,11 @@ body{
 
 h1{
 	margin: 0 0;
+}
+
+h1, h2{
+	color: yellow;
+	text-shadow: 2px 2px 4px black;
 }
 
 .match1{
@@ -138,6 +143,7 @@ h2{
 background-color: rgba(0,0,0, 0.3);
 	/*background-color: pink;*/
 
+
 }
 
 .gains{
@@ -161,16 +167,68 @@ input{
 	text-align: center;
 	width: 90%;
 	height: 25px;
+	font-size: 25px;
+	font-weight: bold;
 }
 
 #grosbouton{
 	height: 90px;
-	font-size: 30px;
+	font-size: 40px;
 
 	cursor: pointer;
+
+	box-shadow: 2px 2px 10px darkgreen;
 }
 
-#mise1, #mise2, #mise3, #gains, #benefice{
+#mise1, #mise2, #mise3, #gains, #benefice, #gains2, #benefice2{
 	font-weight: bolder;
 	font-size: 20px;
+}
+
+.win{
+	color: lightgreen;
+	text-shadow: 2px 2px 4px black;
+	/*float: left;*/
+	font-size: 25px;
+
+}
+
+.lose{
+	color: red;
+	text-shadow: 2px 2px 4px black;
+	/*float: left;*/
+	font-size: 25px;
+}
+
+.ponctuation{
+	color: yellow;
+	text-shadow: 2px 2px 4px black;
+	/*float: left;*/
+	font-size: 18px;
+}
+
+#mise4, #mise5{
+	float: left;
+}
+
+.left{
+	width: 49%;
+	height: 50px;
+	float: left;
+	text-align: right;
+	/*background-color: red;*/
+	line-height: 20px;
+	/*font-size: 15px;*/
+	padding-right: 1%;
+}
+
+.right{
+	width: 49%;
+	height: 50px;
+	float: left;
+	/*background-color: olive;*/
+	line-height: 50px;
+	font-size: 25px;
+	padding-left: 1%;
+	text-align: left;
 }

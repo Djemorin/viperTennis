@@ -43,15 +43,98 @@
 			</div>
 
 			<div class="result">
-				<h2>Mises à jouer :</h2>
-				<p>V(J1)V(J3) : </p><div id="mise1"></div>
-				<p>V(J1)D(J3) : </p><div id="mise2"></div>
-				<p>D(J1)V(J3) : </p><div id="mise3"></div>
+				<h2>Mises à jouer V3 :</h2>
+				
+				<div class="left">
+					<p><span class="win">V(J1)</span> x <span class="win">V(J3)</span> : </p>
+				</div>
+				<div class="right">
+					<div id="mise1"></div>
+				</div>
+
+				<br>
+
+				<div class="left">
+					<p><span class="win">V(J1)</span> x <span class="lose">D(J3)</span> : </p>
+				</div>
+				<div class="right">
+					<div id="mise2"></div>
+				</div>
+
+				<br>
+
+				<div class="left">
+					<p><span class="lose">D(J1)</span> x <span class="win">V(J3)</span> : </p>
+				</div>
+				<div class="right">
+					<div id="mise3"></div>
+				</div>
+				
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<hr>
+				
+				<div class="left">
+					<p>Gains : </p>
+				</div>
+				<div class="right">
+					<div id="gains"></div>
+				</div>
+
+				<div class="left">
+					<p>Bénéfice : </p>
+				</div>
+				<div class="right">
+					<div id="benefice"></div>
+				</div>
+
+				
+				
 			</div>
 
-			<div class="gains">
-				<p>Gains : </p><div id="gains"></div>
-				<p>Bénéfice : </p><div id="benefice"></div>
+			<div class="result">
+				<h2>Mises à jouer V2 :</h2>
+				
+				<div class="left">
+					<p><span class="win">V(J1)</span><span> x </span><span class="lose">D(J3)</span><span class="ponctuation"> : </span></p>
+				</div>
+				<div class="right">
+					<div id="mise4"></div>
+				</div>
+				
+				<!-- <br> -->
+
+				<div class="left">
+					<p><span class="lose">D(J1)</span><span> x </span><span class="win">V(J3)</span><span class="ponctuation"> : </span></p>
+				</div>
+				<div class="right">
+					<div id="mise5"></div>
+				</div>
+
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<hr>
+				
+				<div class="left">
+					<p>Gains : </p>
+				</div>
+				<div class="right">
+					<div id="gains2"></div>
+				</div>
+
+				<div class="left">
+					<p>Bénéfice : </p>
+				</div>
+				<div class="right">
+					<div id="benefice2"></div>
+				</div>
+				
 			</div>	
 
 		</div>
@@ -74,6 +157,8 @@
 				var mise1;
 				var mise2;
 				var mise3;
+				var mise4;
+				var mise5;
 
 				var gain;
 				var benefice;
@@ -81,19 +166,24 @@
 						// K2*(1/((1/I7+1/I8+1/I9)/3)/(3*I8))
 				mise2 = somme*(1/((1/cote1+1/cote2+1/cote3)/3)/(3*cote2));
 				mise3 = somme*(1/((1/cote1+1/cote2+1/cote3)/3)/(3*cote3));
-				mise1 = somme-(mise2);
+				// mise1 = somme-(mise2);
+
+				mise4 = somme*(1/((1/cote2+1/cote3)/2)/(2*cote2));
+				mise5 = somme-mise4
 
 				console.log(cote1);
 				console.log(cote2);
 				console.log(cote3);
+				console.log(mise4);
+				console.log(mise5);
 				// mise1 = mise1.toPrecision(3);
 				// mise2 = mise2.toPrecision(3);
 				// mise3 = mise3.toPrecision(3);
 
-				arrondi1 = mise1*100;          // 556.845
-				arrondi1 = Math.round(arrondi1); // 556
-				arrondi1 = arrondi1/100;        // 5.56
-				mise1 = arrondi1;
+				// arrondi1 = mise1*100;          // 556.845
+				// arrondi1 = Math.round(arrondi1); // 556
+				// arrondi1 = arrondi1/100;        // 5.56
+				// mise1 = arrondi1;
 
 
 				arrondi2 = mise2*100;          // 556.845
@@ -106,18 +196,28 @@
 				arrondi3 = arrondi3/100;        // 5.56
 				mise3 = arrondi3;
 
-				mise1 = somme-(mise2+mise3);
+				// arrondi4 = mise4*100;          // 556.845
+				// arrondi4 = Math.round(arrondi4); // 556
+				// arrondi4 = arrondi4/100;        // 5.56
+				// mise4 = arrondi4;
 
-				// function roundDecimal(nombre, precision){
-    // 				var precision = precision || 2;
-    // 				var tmp = Math.pow(10, precision);
-    // 				return Math.round( nombre*tmp )/tmp;
-				// }
+				arrondi5 = mise5*100;          // 556.845
+				arrondi5 = Math.round(arrondi5); // 556
+				arrondi5 = arrondi5/100;        // 5.56
+				mise5 = arrondi5;
+
+				mise1 = somme-(mise2+mise3);
+				mise4 = somme-mise5
 
 				gain = ((mise1*cote1)+(mise1*cote1)+(mise1*cote1))/3;
 				gain = gain.toPrecision(3);
 				benefice = gain-somme;
 				benefice = benefice.toPrecision(3);
+
+				gain2 = ((mise4*cote2)+(mise5*cote3))/2;
+				gain2 = gain2.toPrecision(3);
+				benefice2 = gain2-somme;
+				benefice2 = benefice2.toPrecision(3);
 				
 				console.log(gain);
 				console.log(benefice);
@@ -125,9 +225,13 @@
 				document.getElementById("mise1").innerHTML = mise1 + " Euros";
 				document.getElementById("mise2").innerHTML = mise2 + " Euros";
 				document.getElementById("mise3").innerHTML = mise3 + " Euros";
+				document.getElementById("mise4").innerHTML = mise4 + " Euros";
+				document.getElementById("mise5").innerHTML = mise5 + " Euros";
 
 				document.getElementById("gains").innerHTML = gain + " Euros";
 				document.getElementById("benefice").innerHTML = benefice + " Euros";
+				document.getElementById("gains2").innerHTML = gain2 + " Euros";
+				document.getElementById("benefice2").innerHTML = benefice2 + " Euros";
 
 
 			}
