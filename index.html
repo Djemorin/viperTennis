@@ -166,8 +166,7 @@
 						// K2*(1/((1/I7+1/I8+1/I9)/3)/(3*I8))
 				mise2 = somme*(1/((1/cote1+1/cote2+1/cote3)/3)/(3*cote2));
 				mise3 = somme*(1/((1/cote1+1/cote2+1/cote3)/3)/(3*cote3));
-				// mise1 = somme-(mise2);
-
+				
 				mise4 = somme*(1/((1/cote2+1/cote3)/2)/(2*cote2));
 				mise5 = somme-mise4
 
@@ -176,15 +175,6 @@
 				console.log(cote3);
 				console.log(mise4);
 				console.log(mise5);
-				// mise1 = mise1.toPrecision(3);
-				// mise2 = mise2.toPrecision(3);
-				// mise3 = mise3.toPrecision(3);
-
-				// arrondi1 = mise1*100;          // 556.845
-				// arrondi1 = Math.round(arrondi1); // 556
-				// arrondi1 = arrondi1/100;        // 5.56
-				// mise1 = arrondi1;
-
 
 				arrondi2 = mise2*100;          // 556.845
 				arrondi2 = Math.round(arrondi2); // 556
@@ -196,18 +186,15 @@
 				arrondi3 = arrondi3/100;        // 5.56
 				mise3 = arrondi3;
 
-				// arrondi4 = mise4*100;          // 556.845
-				// arrondi4 = Math.round(arrondi4); // 556
-				// arrondi4 = arrondi4/100;        // 5.56
-				// mise4 = arrondi4;
-
 				arrondi5 = mise5*100;          // 556.845
 				arrondi5 = Math.round(arrondi5); // 556
 				arrondi5 = arrondi5/100;        // 5.56
 				mise5 = arrondi5;
 
 				mise1 = somme-(mise2+mise3);
+				mise1 = mise1.toPrecision(3);
 				mise4 = somme-mise5
+				mise4 = mise4.toPrecision(3);
 
 				gain = ((mise1*cote1)+(mise1*cote1)+(mise1*cote1))/3;
 				gain = gain.toPrecision(3);
@@ -232,10 +219,7 @@
 				document.getElementById("benefice").innerHTML = benefice + " Euros";
 				document.getElementById("gains2").innerHTML = gain2 + " Euros";
 				document.getElementById("benefice2").innerHTML = benefice2 + " Euros";
-
-
-			}
-			
+			}			
 		</script>
 	</body>
 </html>

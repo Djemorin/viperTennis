@@ -5,7 +5,7 @@ body{
 	background-color: black;
 	background: url(bg.jpg);
 	background-position: center;
-	background-attachment: fixed ;important!
+	background-attachment: fixed !important;
 	background-repeat: no-repeat;
 	background-size: cover;
 
@@ -30,8 +30,6 @@ body{
 
 	margin: 0 auto;
 
-	/*background-color: rgba(0,0,0, 0.3);*/
-
 	text-align: center;
 }
 
@@ -46,8 +44,7 @@ body{
 
 	margin: 2% auto;
 	padding: 2% auto;
-	background-color: rgba(0,0,0, 0.3);
-	/*background-color: blue;*/
+
 	font-size: 25px;
 
 	line-height: 70px;
@@ -76,10 +73,6 @@ h1, h2{
 	line-height: 20px;
 	margin: 2% auto;
 	padding: 5% auto;
-
-	/*background-color: yellow;*/
-/*background-color: rgba(0,0,0, 0.3);*/
-	/*border: 2px solid white;*/
 }
 
 .match2{
@@ -91,10 +84,6 @@ h1, h2{
 	line-height: 20px;
 	margin: 2% auto;
 	padding: 5% auto;
-
-	/*background-color: red;*/
-/*background-color: rgba(0,0,0, 0.3);*/
-	/*border: 2px solid white*/
 }
 
 .contenumatch{
@@ -119,13 +108,8 @@ h2{
 	height: 100px;
 
 	line-height: 110px;
-/*background-color: rgba(0,0,0, 0.3);*/
+
 	margin: 1% auto;
-
-	/*background-color: green;*/
-
-
-
 
 }
 
@@ -141,9 +125,6 @@ h2{
 
 	border: 2px solid white;
 background-color: rgba(0,0,0, 0.3);
-	/*background-color: pink;*/
-
-
 }
 
 .gains{
@@ -158,8 +139,6 @@ background-color: rgba(0,0,0, 0.3);
 
 	border: 2px solid white;
 background-color: rgba(0,0,0, 0.3);
-	/*background-color: white;*/
-
 }
 
 input{
@@ -188,7 +167,6 @@ input{
 .win{
 	color: lightgreen;
 	text-shadow: 2px 2px 4px black;
-	/*float: left;*/
 	font-size: 25px;
 
 }
@@ -196,14 +174,12 @@ input{
 .lose{
 	color: red;
 	text-shadow: 2px 2px 4px black;
-	/*float: left;*/
 	font-size: 25px;
 }
 
 .ponctuation{
 	color: yellow;
 	text-shadow: 2px 2px 4px black;
-	/*float: left;*/
 	font-size: 18px;
 }
 
@@ -216,9 +192,7 @@ input{
 	height: 50px;
 	float: left;
 	text-align: right;
-	/*background-color: red;*/
 	line-height: 20px;
-	/*font-size: 15px;*/
 	padding-right: 1%;
 }
 
@@ -226,7 +200,6 @@ input{
 	width: 49%;
 	height: 50px;
 	float: left;
-	/*background-color: olive;*/
 	line-height: 50px;
 	font-size: 25px;
 	padding-left: 1%;
